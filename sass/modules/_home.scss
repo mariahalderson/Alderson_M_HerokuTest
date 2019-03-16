@@ -1,0 +1,41 @@
+@keyframes rotateCircle{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+.animation{
+  animation: rotateCircle 0.8s linear infinite;
+}
+#hero{
+  background: url("../images/hero-bckgd.jpeg");
+  background-size: cover;
+  height: 100vh;
+
+  .hero-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    .logo-container{
+      object{
+        width: 175px;
+        height: 175px;
+        // #document{
+        //   svg{
+        //     g#outer-circle{
+        //       transform-origin: center;
+        //       animation: rotateCircle 0.8s ease infinite;
+        //     }
+        //   }
+        // }
+
+      }
+    }
+    h2{
+      text-align: center;
+    }
+  }
+}
