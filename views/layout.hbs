@@ -2,10 +2,25 @@
 <html>
   <head>
     <title>{{title}}</title>
-    <link rel='stylesheet' href='/stylesheets/main.css' />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Titillium+Web:900" rel="stylesheet">
+    <link rel='stylesheet' href='/stylesheets/main.css'>
   </head>
   <body>
-    <a href="/">Home</a>
+    <header>
+      <div class="logo-container">
+        <img src="/images/logo-small.svg" alt="Bomb Coffee Logo">
+      </div>
+      <div class="menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </header>
     {{{body}}}
+
+    <script src="/javascripts/main.js"></script>
   </body>
 </html>
