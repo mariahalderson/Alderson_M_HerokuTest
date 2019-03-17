@@ -5,3 +5,8 @@ var circle = svg.querySelectorAll("g");
 
 //  console.log(svg);
 circle.forEach(circ=>circ.classList.add("animation"));
+
+//images for bomb Beans
+var tiles = document.querySelectorAll(".tile");
+
+tiles.forEach(tile=>tile.style.background = "center/cover no-repeat url('../images/"+tile.dataset.img+"')");
