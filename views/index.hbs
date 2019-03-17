@@ -23,28 +23,32 @@
 </section>
 
 <section id="aboutus">
+  <div class="section-overlay">
   <div class="section">
     <h2 class="section-title">Spill it.</h2>
     <div class="border"></div>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    <div class="section-overlay"></div>
   </div>
+</div>
 </section>
 
-<section id="blends" class="section">
-  <h2 class="section-title">Learn about our favourite Bomb Beans.</h2>
+<section id="blends">
+  <h2 class="section-title">Learn about our Bomb Beans.</h2>
   <div class="border"></div>
-  <img src="/images/leaves.png" alt="leaf decoration" class="backgd-item">
+  <img src="/images/leafs.png" alt="leaf decoration" class="bckgd-item">
   <div class="tile-container">
     {{#each beans}}
-      <div class="tile">
-        <div class="tile-overlay"></div>
-        <img src="/images/{{image}}" alt="{{name}}">
-        <p>{{name}}</p>
+      <div class="tile" data-img="{{image}}">
+        <div class="section-overlay">
+          <!-- <img src="/images/{{image}}" alt="{{name}}"> -->
+          <p>{{name}}</p>
+        </div>
       </div>
     {{/each}}
   </div>
-  <img src="/images/leaves.png" alt="leaf decoration" class="bckgd-item">
+  <div class="image-container">
+    <img src="/images/leafs.png" alt="leaf decoration" class="bckgd-item">
+  </div>
 </section>
 
 <section id="calltoaction">
