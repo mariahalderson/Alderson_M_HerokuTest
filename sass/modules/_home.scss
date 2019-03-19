@@ -72,11 +72,14 @@
     width: 50%;
     max-height: 200px;
 
-    p{
+    a{
+      font-family: $body-font;
       color: #fff;
       text-align: center;
       text-transform: uppercase;
       font-weight: 900;
+      text-decoration: none;
+      //margin: 0 auto;
     }
   }
 }
