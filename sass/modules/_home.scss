@@ -1,17 +1,7 @@
-@keyframes rotateCircle{
-  from{
-    transform: rotate(0deg);
-  }
-  to{
-    transform: rotate(360deg);
-  }
-}
-.animation{
-  animation: rotateCircle 0.8s linear infinite;
-}
 #hero{
-  background: url("../images/hero-bckgd.jpeg");
+  background: url("../images/hero-bckgd.jpg");
   background-size: cover;
+  background-position: center;
   height: 100vh;
 
   .hero-container{
@@ -23,20 +13,15 @@
       object{
         width: 175px;
         height: 175px;
-        // #document{
-        //   svg{
-        //     g#outer-circle{
-        //       transform-origin: center;
-        //       animation: rotateCircle 0.8s ease infinite;
-        //     }
-        //   }
-        // }
-
       }
     }
     h2{
       text-align: center;
     }
+  }
+
+  .arrow-down{
+    border-color: $primary-brand-color;
   }
 }
 
@@ -46,6 +31,13 @@
 .input-container{
   display: flex;
   flex-direction: column;
+
+  @media screen and (min-width: 650px){
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+  }
 }
 
 
@@ -57,22 +49,65 @@
 
   p{
     color: #fff;
+    max-width: 350px;
   }
 }
 
 
-//BOMB BEANS
+//BOMB BEANS/ BLENDS
+#blends{
+  position: relative;
+  margin-bottom: 120px;
+
+  @media screen and (min-width: 650px){
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .section-title{
+    padding-left: 14px;
+    @media screen and (min-width: 650px){
+      padding-left: 0;
+    }
+  }
+  .border{
+    margin-left: 14px;
+    @media screen and (min-width: 650px){
+      margin-left: 0;
+    }
+  }
+}
 .tile-container{
   display: flex;
   flex-wrap: wrap;
   width: 100vw;
+
+  @media screen and (min-width: 650px){
+    width: 100%;
+  }
 
   .tile{
     overflow: hidden;
     width: 50%;
     max-height: 200px;
 
+    .section-overlay{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @media screen and (min-width: 650px){
+      width: 25%;
+      height: 400px;
+    }
+
+    a{
+      text-decoration: none;
+    }
+
     p{
+      font-family: $body-font;
       color: #fff;
       text-align: center;
       text-transform: uppercase;
@@ -81,10 +116,48 @@
   }
 }
 
+
 .bckgd-item{
-  max-width: 75%;
+  width: 75%;
+  max-width: 300px;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  bottom: -85px;
+
+  @media screen and (min-width: 650px){
+    right: 50px;
+  }
+
+  @media screen and (min-width: 500px){
+    bottom: -120px;
+  }
+
   &:first-of-type{
+    position: static;
     transform: rotate(180deg);
     margin-top: -50px;
+  }
+}
+
+//VISIT US
+#calltoaction{
+  background: center/cover no-repeat url("../images/cafe-bckgd.jpg");
+  padding: 0;
+
+  h2, p{
+    color: #fff;
+    max-width: 350px;
+  }
+
+  .border{
+    background-color: #fff;
+  }
+
+  .logo-container{
+    margin: 30px 0;
+    img{
+      max-width: 150px;
+    }
   }
 }
