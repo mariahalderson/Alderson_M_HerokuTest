@@ -3,17 +3,15 @@
 
   <div class="hero-container section">
     <div class="logo-container">
-      <!-- <img src="/images/logo.svg" alt="Bomb Coffee Logo"> -->
       <object data="/images/logo.svg"></object>
     </div>
     <h2 class="section-title">Spill the beans.</h2>
   </div>
 
-  <div class="scroll-arrow"></div>
+  <div class="arrow-down heartbeat index-arrow"></div>
 </section>
 
 <section id="locations" class="section">
-  <!-- <h2 class="hide">Find a location near you.</h2> -->
   <h2 class="section-title">Find a location near you.</h2>
   <div class="border"></div>
   <div class="input-container">
@@ -39,19 +37,19 @@
   <div class="tile-container">
     {{#each beans}}
       <div class="tile" data-img="{{image}}">
-        <div class="section-overlay">
-          <!-- <img src="/images/{{image}}" alt="{{name}}"> -->
-          <a href="/beans/{{name}}">{{name}}</a>
-        </div>
+        <a href="/beans/{{name}}">
+          <div class="section-overlay">
+            <p>{{name}}</p>
+          </div>
+        </a>
       </div>
     {{/each}}
   </div>
-  <div class="image-container">
     <img src="/images/leafs.png" alt="leaf decoration" class="bckgd-item">
-  </div>
 </section>
 
 <section id="calltoaction">
+  <div class="section-overlay">
   <div class="section">
     <h2 class="section-title">Come spill the beans with us.</h2>
     <div class="border"></div>
@@ -60,11 +58,5 @@
       <img src="/images/logo-white.svg" alt="Bomb Coffee Logo">
     </div>
   </div>
-  <div class="section-overlay"></div>
-</section>
-
-<footer>
-  <div class="logo-container">
-    <img src="/images/logo-white.svg" alt="Bomb Coffee Logo">
   </div>
-</footer>
+</section>

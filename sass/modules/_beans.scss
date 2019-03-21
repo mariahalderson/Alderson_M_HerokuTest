@@ -1,0 +1,56 @@
+#beanHero{
+  height: 100vh;
+
+  .section{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .hero-text{
+      display: flex;
+      flex-direction: column;
+    }
+
+    h2{
+      color: #fff;
+      text-align: center;
+    }
+
+    p{
+      color: #fff;
+      text-align: center;
+    }
+  }
+}
+
+#beanInfo{
+  .image-container{
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+
+    img{
+      max-width: 100%;
+    }
+  }
+
+  .info-container{
+    margin: 30px 0 60px 0;
+
+    .sourcelink{
+      margin: 10px 0;
+    }
+  }
+
+}
+
+.back{
+  i{
+    color: $accent-color;
+    font-size: 35px;
+    margin-bottom: 30px;
+    margin-left: 14px;
+  }
+}
